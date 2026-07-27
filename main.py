@@ -87,7 +87,7 @@ def endpoint_ekstraksi(data_folder: dict):
                                         if idx_target + 2 < len(parts): 
                                             val_libur = parts[idx_target + 2].replace(',', '')
                                             jam_libur = float(val_libur) if val_libur.isdigit() else 0.0
-                           rows.append({"NIK": nik, "Nama": nama, "HK": hk, "Jam Lembur Biasa": jam_biasa, "Jam Lembur Libur": jam_libur})
+                            rows.append({"NIK": nik, "Nama": nama, "HK": hk, "Jam Lembur Biasa": jam_biasa, "Jam Lembur Libur": jam_libur})
 
         if rows:
             df = pd.DataFrame(rows)
